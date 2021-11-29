@@ -42,9 +42,11 @@ export default function Entry({ itemData }){
         {itemData.post_title}
       </h5>
       <h6 className="card-subtitled mb-2 text-text-muted">
-        {itemData.post_name}
+        {itemData.post_date}
       </h6>
-      <p className="card-text">{itemData.post_date}</p>
+      <h6 className="card-subtitled mb-2 text-text-muted">
+        {itemData.user_login}
+      </h6>
       <p className="card-text">{itemData.post_content}</p>
     </div>
   </article>
